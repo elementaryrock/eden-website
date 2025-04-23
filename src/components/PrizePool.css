@@ -1,0 +1,17 @@
+.prizepool-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 24px;
+}
+.prize-title {
+  font-size: 1.3rem;
+  color: #f7bfff;
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+.prize-desc {
+  font-size: 1rem;
+  color: #d6b7f7;
+  margin-bottom: 12px;
+}

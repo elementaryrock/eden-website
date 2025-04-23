@@ -1,0 +1,16 @@
+.sponsor-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.sponsor-box {
+  width: 140px;
+  height: 80px;
+  background: #662d91;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

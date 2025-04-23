@@ -1,0 +1,282 @@
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  background: #1a0a2d url('/images/stars-bg.png') repeat;
+  color: #fff;
+  font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+  letter-spacing: 0.5px;
+}
+
+.loading {
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+section {
+  margin: 40px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+button, .btn {
+  background: #e1b7fc;
+  color: #1a0a2d;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-family: inherit;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover, .btn:hover {
+  background: #b678e6;
+}
+
+.pixel-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #f7bfff;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.pixel-subtitle {
+  font-size: 1.1rem;
+  color: #d6b7f7;
+  margin-bottom: 24px;
+}
+
+.pixel-box {
+  background: #4d267d;
+  border-radius: 16px;
+  box-shadow: 4px 4px #2e1147;
+  margin: 16px;
+  padding: 24px 16px;
+  display: inline-block;
+  min-width: 180px;
+  min-height: 180px;
+  position: relative;
+}
+
+.pixel-box .arrow {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #b678e6;
+  color: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.pixel-section-title {
+  font-size: 2rem;
+  color: #fff;
+  margin: 32px 0 24px 0;
+  text-shadow: 2px 2px #000;
+  letter-spacing: 2px;
+}
+
+.sponsor-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.sponsor-box {
+  width: 140px;
+  height: 80px;
+  background: #662d91;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule {
+  background: #2e1147;
+  border-radius: 16px;
+  padding: 32px 0;
+  margin: 32px auto;
+  max-width: 700px;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  align-items: end;
+  margin-top: 20px;
+}
+
+.schedule-label {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.schedule-slot {
+  background: #b678e6;
+  border-radius: 6px 6px 0 0;
+  color: #1a0a2d;
+  font-size: 0.95rem;
+  padding: 8px 0;
+  margin-bottom: 0;
+}
+
+footer {
+  background: #4d267d;
+  min-height: 40px;
+  margin-top: 40px;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .App, section {
+    max-width: 98vw;
+    padding: 0 2vw;
+  }
+  .pixel-title {
+    font-size: 2rem;
+  }
+  .pixel-section-title {
+    font-size: 1.3rem;
+  }
+  .pixel-box {
+    min-width: 130px;
+    min-height: 120px;
+    padding: 16px 8px;
+  }
+  .sponsor-row {
+    gap: 12px;
+  }
+  .sponsor-box {
+    width: 90px;
+    height: 50px;
+  }
+  .schedule {
+    padding: 16px 0;
+    max-width: 99vw;
+  }
+  .schedule-grid {
+    grid-template-columns: repeat(7, minmax(30px, 1fr));
+    gap: 2px;
+  }
+}
+@media (max-width: 600px) {
+  .App, section {
+    max-width: 100vw;
+    padding: 0 1vw;
+  }
+  .pixel-title {
+    font-size: 1.2rem;
+  }
+  .pixel-section-title {
+    font-size: 1rem;
+    margin: 18px 0 10px 0;
+  }
+  .pixel-box {
+    min-width: 90px;
+    min-height: 70px;
+    padding: 8px 2px;
+    font-size: 0.85rem;
+  }
+  .sponsor-row {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+  }
+  .sponsor-box {
+    width: 90vw;
+    max-width: 350px;
+    min-width: 0;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .pixel-box {
+    width: 95vw;
+    min-width: 0;
+    max-width: 350px;
+    margin: 12px auto;
+    display: block;
+  }
+  .prizepool-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+  .schedule {
+    padding: 8px 0;
+    max-width: 100vw;
+  }
+  .schedule-grid {
+    grid-template-columns: repeat(7, minmax(18px, 1fr));
+    gap: 1px;
+  }
+  button, .btn {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 0.9rem;
+    padding: 0 2px;
+  }
+  .navbar a {
+    padding: 5px 8px;
+    font-size: 0.9rem;
+  }
+}
+
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

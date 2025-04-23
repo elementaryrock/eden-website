@@ -1,0 +1,42 @@
+{
+  "navbar": [
+    {"label": "Home", "link": "#home"},
+    {"label": "About", "link": "#about"},
+    {"label": "Sponsors", "link": "#sponsors"},
+    {"label": "Contact Us", "link": "#contact"},
+    {"label": "FAQs", "link": "#faq"}
+  ],
+  "hero": {
+    "title": "EDEN 4.0",
+    "subtitle": "Innovate • Collaborate • Transform",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus ac lacus a imperdiet. Integer ac elementum nisi. Aliquam at interdum justo. Nunc nisl mi, semper feugiat maximus id, venenatis ac ante. Cras eu nulla ut diam vulputate fringilla. Phasellus enim dui, fringilla ac velit vel, imperdiet sollicitudin nunc. Morbi ac ultricies leo.",
+    "buttonText": "Register Now!"
+  },
+  "prizePool": [
+    {"title": "1st Prize", "desc": "Details here", "link": "#"},
+    {"title": "2nd Prize", "desc": "Details here", "link": "#"},
+    {"title": "3rd Prize", "desc": "Details here", "link": "#"}
+  ],
+  "schedule": {
+    "date": "June 6th",
+    "slots": [
+      {"start": "9am", "end": "10am", "label": "Opening"},
+      {"start": "10am", "end": "12pm", "label": "Session 1"},
+      {"start": "12pm", "end": "1pm", "label": "Lunch"},
+      {"start": "1pm", "end": "3pm", "label": "Session 2"}
+    ]
+  },
+  "sponsors": {
+    "titleSponsors": ["/images/sponsor1.png", "/images/sponsor2.png", "/images/sponsor3.png", "/images/sponsor4.png", "/images/sponsor5.png", "/images/sponsor6.png"],
+    "communityPartners": ["/images/community1.png", "/images/community2.png"],
+    "energyPartners": ["/images/energy1.png"]
+  },
+  "contact": {
+    "heading": "Contact Us",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus ac lacus a imperdiet. Integer ac elementum nisi. Aliqua"
+  },
+  "faq": {
+    "heading": "FAQ",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus ac lacus a imperdiet. Integer ac elementum nisi. Aliqua"
+  }
+}
