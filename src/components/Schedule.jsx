@@ -1,22 +1,39 @@
 import React from 'react';
 import './Schedule.css';
 
-const hours = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm"];
-
+// Define the grid hours for the old design
 const Schedule = ({ date, slots }) => (
   <section id="schedule">
     <div className="pixel-section-title">SCHEDULE</div>
-    <div className="schedule">
+    <div className="schedule-table-responsive">
       <div className="schedule-label">{date}</div>
-      <div className="schedule-grid">
-        {hours.map((hour, idx) => {
-          const slot = slots.find(s => s.start === hour);
-          return (
-            <div key={hour} className="schedule-slot" style={{height: slot ? '40px' : '20px', background: slot ? '#b678e6' : '#4d267d'}}>
-              {slot ? slot.label : ''}
-            </div>
-          );
-        })}
+      <table className="schedule-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Event</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          {slots.map((slot, idx) => (
+            <tr key={idx}>
+              <td>{slot.start} - {slot.end}</td>
+              <td>{slot.label}</td>
+              <td>{slot.location}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      {/* Mobile Cards */}
+      <div className="schedule-table-cards">
+        {slots.map((slot, idx) => (
+          <div className="schedule-card" key={idx}>
+            <div className="schedule-card-time">{slot.start} - {slot.end}</div>
+            <div className="schedule-card-label">{slot.label}</div>
+            <div className="schedule-card-location">{slot.location}</div>
+          </div>
+        ))}
       </div>
     </div>
   </section>

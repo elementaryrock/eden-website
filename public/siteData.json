@@ -22,12 +22,16 @@
     {"title": "3rd Prize", "desc": "Details here", "link": "#"}
   ],
   "schedule": {
-    "date": "June 6th",
+    "date": "June 7th",
     "slots": [
-      {"start": "9am", "end": "10am", "label": "Opening"},
-      {"start": "10am", "end": "12pm", "label": "Session 1"},
-      {"start": "12pm", "end": "1pm", "label": "Lunch"},
-      {"start": "1pm", "end": "3pm", "label": "Session 2"}
+      {"start": "9am", "end": "10am", "label": "Opening Ceremony", "location": "Main Hall"},
+      {"start": "10am", "end": "11am", "label": "Workshop 1: Intro to React", "location": "Room A"},
+      {"start": "11am", "end": "12pm", "label": "Workshop 2: Pixel Art", "location": "Room B"},
+      {"start": "12pm", "end": "1pm", "label": "Lunch Break", "location": "Cafeteria"},
+      {"start": "1pm", "end": "2pm", "label": "Session A: Game Dev", "location": "Room C"},
+      {"start": "2pm", "end": "3pm", "label": "Session B: AI Panel", "location": "Auditorium"},
+      {"start": "3pm", "end": "4pm", "label": "Panel Discussion: Future of Tech", "location": "Main Hall"},
+      {"start": "4pm", "end": "5pm", "label": "Closing & Awards", "location": "Main Hall"}
     ]
   },
   "sponsors": {
