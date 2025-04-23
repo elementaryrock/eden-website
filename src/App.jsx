@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Navbar items={data.navbar} />
-      <Hero {...data.hero} />
+      <Hero {...data.hero} heroImage={data.hero.heroImage} />
       <PrizePool pool={data.prizePool} />
       <Schedule {...data.schedule} />
       <Sponsors {...data.sponsors} />
